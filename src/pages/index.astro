@@ -1,15 +1,21 @@
 ---
 import Layout from "../layouts/Layout.astro"
 import Countdown from "../components/Countdown.astro"
+import Logo from "../components/Logo.astro";
 ---
 
 <Layout title="Proxima Fecha">
-    <section class="relative">
-        <video class="w-full" loop muted autoplay src="https://nhrl.cdn.prismic.io/nhrl/2236371d-b74a-4ce2-afba-13cae109c73d_COMPRESSED-NHRL_LOOPING+VIDEO_15_2+SEC.mp4"></video>
+    <section class="relative flex justify-center items-center flex-col md:h-[80vh] h-[32vh]  ">
+
+        <div class="absolute flex justify-center text-gray-800 stroke-slate-100 stroke-[4px] w-1/2 ccl">
+            <Logo />
+        </div>
+
+        <video class="w-full object-cover object-center h-full" loop muted autoplay src="https://nhrl.cdn.prismic.io/nhrl/2236371d-b74a-4ce2-afba-13cae109c73d_COMPRESSED-NHRL_LOOPING+VIDEO_15_2+SEC.mp4"></video>
         <div class="triangle absolute border-current "></div>
     </section>
-    <main class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4  ">
 
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4  ">
 
        <Countdown />
 
@@ -36,7 +42,7 @@ import Countdown from "../components/Countdown.astro"
         <p class="text-gray-800 dark:text-white p-3">Odio repudiandae illo aliquam sint quae, saepe totam voluptatibus aperiam molestiae! Reiciendis ea fugiat sunt sapiente placeat temporibus officia, quia perferendis repellat at expedita quibusdam, porro iusto possimus quae asperiores.</p>
         <p class="text-gray-800 dark:text-white p-3">Amet, deserunt quidem tempore explicabo saepe veniam officia cum suscipit eos laboriosam recusandae! Sapiente, aut voluptates ipsa placeat pariatur rem similique ab repellendus, velit ad dolores accusantium amet alias natus!</p>
         <p class="text-gray-800 dark:text-white p-3">Magni eum officiis, nisi quas iure incidunt, asperiores doloribus assumenda esse similique consequuntur aspernatur rem dolore, repudiandae error id necessitatibus vitae dolorum. Beatae eveniet earum laudantium minima, est magni itaque!</p>   
-    </main>
+    </div>
    
 </Layout>
 
@@ -45,7 +51,7 @@ import Countdown from "../components/Countdown.astro"
     .triangle{
         bottom: 0;
         left: 0;
-        border-width: 40px 0 0 40px;
+        border-width: 50px 0 0 50px;
     }
 	html .triangle{
 
