@@ -5,15 +5,16 @@ import Logo from "../components/Logo.astro";
 ---
 
 <Layout title="Proxima Fecha">
-    <section class="relative flex justify-center items-center flex-col">
+    <section class="relative flex justify-center items-center flex-col md:h-[80vh] h-[32vh]  ">
 
-        <div class="absolute  text-gray-800 stroke-slate-100 stroke-2 w-1/2 ccl">
+        <div class="absolute flex justify-center text-gray-800 stroke-slate-100 stroke-[4px] w-1/2 ccl">
             <Logo />
         </div>
 
-        <video class="w-full" loop muted autoplay src="https://nhrl.cdn.prismic.io/nhrl/2236371d-b74a-4ce2-afba-13cae109c73d_COMPRESSED-NHRL_LOOPING+VIDEO_15_2+SEC.mp4"></video>
+        <video class="w-full object-cover object-center h-full" loop muted autoplay src="https://nhrl.cdn.prismic.io/nhrl/2236371d-b74a-4ce2-afba-13cae109c73d_COMPRESSED-NHRL_LOOPING+VIDEO_15_2+SEC.mp4"></video>
         <div class="triangle absolute border-current "></div>
     </section>
+
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4  ">
 
        <Countdown />
