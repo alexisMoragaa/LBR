@@ -14,17 +14,17 @@
         <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
             <ul class="flex flex-col font-medium py-4 md:p-2  md:px-4 mt-4 border border-gray-100 rounded-lg  md:space-x-8  md:flex-row md:mt-0 md:border-0 dark:border-gray-700 dark:bg-gray-800 bg-white">
                 <li>
-                    <a href="/" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Inicio</a>
+                    <a href="/" id="inicio" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" >Inicio</a>
                 </li>
             
                 <li>
-                    <a href="/clasification" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Tabla de clasificaciones</a>
+                    <a href="/clasification"  id="tClasification" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" >Tabla de clasificaciones</a>
                 </li>
                 <li>
-                    <a href="/oldDates" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Fechas Anteriores</a>
+                    <a href="/oldDates" id="oldDates" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Fechas Anteriores</a>
                 </li>
                 <li>
-                    <a href="/rules" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Reglas</a>
+                    <a href="/rules" id="rules" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Reglas</a>
                 </li>
                 <li>
                     <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm  py-1 px-3">
@@ -46,7 +46,14 @@
     </div>
 </nav>
 
+
+<!--  md:text-blue-700  md:dark:text-blue-500 -->
 <script>
+    //Se actualiza el componente nav segun la pagina que se muestre en pantalla
+    let nav = document.getElementById("main-layout");
+    document.getElementById(nav.dataset.id).classList.add('md:text-blue-700' , 'md:dark:text-blue-500')
+
+
     var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
     var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
     
