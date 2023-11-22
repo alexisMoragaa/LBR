@@ -1,6 +1,7 @@
 ---
 import Nav from '../components/Nav.astro';
-// import { ViewTransitions } from 'astro:transitions';
+import { ViewTransitions } from 'astro:transitions';
+
 interface Props {
 	title: string;
 	id :string;
@@ -20,8 +21,7 @@ const { title, id } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content="Liga batallas de robot" />
 		<title>{title}</title>
-		<!-- <ViewTransitions/> -->
-		
+		<ViewTransitions />
 	</head>
 	<body class="dark:bg-gray-900">
 		<script src="https://kit.fontawesome.com/4bdf7e13d5.js" crossorigin="anonymous"></script>
