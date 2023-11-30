@@ -4,13 +4,13 @@ import Layout from "../layouts/Layout.astro"
 ---
 
 <Layout title="reglas" id="rules">
-    <section class="max-w-screen-lg flex flex-wrap items-center justify-between mx-auto px-4 mt-12 mb-12">
+    <section class="max-w-screen-lg flex flex-wrap items-center justify-between mx-auto px-6 mt-12 mb-12">
 
         
         
         <div class="header md:mt-12 mt-10">
             <div class="flex items-end">
-                <h1 class="dark:text-white text-5xl relative" >Reglas y regulaciones  <span class=" md:w-32 w-20 pl-1 inline-block absolute bottom-0  dark:text-gray-800 text-gray-300 dark:stroke-slate-50 stroke-gray-800 stroke-[4px]"><Logo /> </span> </h1>
+                <h1 class="dark:text-white md:text-5xl text-4xl pr-4 relative" >Reglas y regulaciones  <span class=" md:w-32 w-20 pl-1 inline-block absolute bottom-0  dark:text-gray-800 text-gray-300 dark:stroke-slate-50 stroke-gray-800 stroke-[4px]"><Logo /> </span> </h1>
               
             </div>
             <p class="dark:text-white mt-6">
@@ -21,7 +21,7 @@ import Layout from "../layouts/Layout.astro"
                 Los robots reciben tres minutos en cada ronda, durante los cuales uno de los robots puede quedar noqueado,  o se acaba el tiempo y pasa a la decisión de los jueces. 
             </p>
             <p class="dark:text-white mt-2">
-                Los constructores reparan sus robots entre cada partida hasta que son eliminados o coronados como campeones.
+                Los constructores reparan sus robots entre cada encuentro hasta que son eliminados o coronados como campeones.
             </p>
         </div>
 
@@ -38,7 +38,7 @@ import Layout from "../layouts/Layout.astro"
                 <li role="presentation"> 
                     <button class="inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white"  data-tabs-target="#battery-tab" type="button" role="tab" aria-controls="profile" aria-selected="false">
                         <i class="fa-solid fa-battery-bolt mr-2"></i>
-                        Energia 
+                        Energía 
                     </button>
                 </li>
                 <li role="presentation"> 
@@ -57,34 +57,36 @@ import Layout from "../layouts/Layout.astro"
               
             </ul>
 
-            <div class="rules-tab-content">
+            <div class="rules-tab-content ">
                 <!-- Reglas sde enfrentamiento -->
                 <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="fight-tab" role="tabpanel" aria-labelledby="battery-tab">
                     <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Reglas sobre los enfrentamientos</h3>
                     <ul class="list-disc md:px-6 pl-6 pt-1 pb-3 ">
-                        <li class="dark:text-gray-400 py-1.5"> <strong class="text-base/[18px] dark:text-white">Inspección de seguridad: </strong> Al inicio de cada encuentro el robot debera pasar por una inspeccion de seguridad realizada por un miembro del staff LBR durante la cual se validara que el robot cumpla con todas las medidas de seguridad y restricciones de diseño establecidas. <br> Los robots que no cumplan con la inspeccion no podran continuar </li>                        
-                        <li class="dark:text-gray-400 py-1.5 "><strong class="text-base/[18px] dark:text-white">Duración del encuentro:</strong> Cada encuentro tendra una duración de 3 minutos, dentros de los cuales deberan lograr la destruccion o rendicion de su oponente, de no ser asi el ganador sera definido por los jueces</li>
-                        <li class="dark:text-gray-400 py-1.5"> <strong class="text-base/[18px] dark:text-white">Desición de los jueces:</strong> Si el encuentro llega a los tres minutos los jueces determinaran el ganador mediante un sistema de puntos basados en
+                        <li class="dark:text-gray-400 py-1.5"> <strong class="text-base/[18px] dark:text-white">Inspección de seguridad:</strong> Al inicio de cada encuentro, el robot deberá pasar por una inspección de seguridad realizada por un miembro del STAFF LBR, durante la cual se validará que el robot cumpla con todas las medidas de seguridad y restricciones de diseño establecidas. <br> Los robots que no cumplan con la inspección no podrán participar de los encuentros. </li>                        
+                        <li class="dark:text-gray-400 py-1.5 "><strong class="text-base/[18px] dark:text-white">Duración del encuentro:</strong> Cada encuentro tendrá una duración de 3 minutos, dentro de los cuales deberán lograr la destrucción o rendición de su oponente, de no ser así, el ganador será definido por los jueces. </li>
+                        <li class="dark:text-gray-400 py-1.5"> <strong class="text-base/[18px] dark:text-white">Decisión de los jueces:</strong> Si el encuentro llega a los tres minutos, los jueces determinarán el ganador mediante un sistema de puntos basados en
                             <span class="bg-blue-100 text-blue-800 text-xs font-medium me-1 px-2  rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400">Agresividad</span>, 
-                            <span class="bg-blue-100 text-blue-800 text-xs font-medium  me-1 px-2  rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400">Daño</span>y
-                            <span class="bg-blue-100 text-blue-800 text-xs font-medium me-1 px-2 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400">Maniobravilidad</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium  me-1 px-2  rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400">Daño</span> y
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium me-1 px-2 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400">Maniobrabilidad</span>.
                         </li>
-                        <li class="dark:text-gray-400 py-1.5"> <strong class="text-base/[18px] dark:text-white">Reparación durante el encuentro:</strong> Cada competidor tiene destinado un minuto como tiempo de reparacion durante el encuentro, no regresar al combate luego de este tiempo sera considerado como abandono y terminara en la descalificación del participante </li>
-                        <li class="dark:text-gray-400 py-1.5"> <strong class="text-base/[18px] dark:text-white">Reparación posterior a un encuentro:</strong> Cada competidor posterior a un encuentro tendra asegurado un tiempo minimo de reparacion de 15 minutos. Este tiempo podria extenderse de forma variable en funcion de otros encuentros o factores determinados por el staff de LBR. 
-                            <br><span class="bg-yellow-100 text-yellow-800 text-xs font-medium  px-2  rounded dark:bg-gray-700 dark:text-yellow-400 border border-yellow-400">No Presentarse</span>
-                            a la convocatoria por parte del staff luego de finalizado el tiempo establecido podria ser considerado abandono y terninar en la descalificación del participante 
+                        <li class="dark:text-gray-400 py-1.5"> <strong class="text-base/[18px] dark:text-white">Reparación durante el encuentro:</strong> Cada competidor tiene destinado un minuto como tiempo de reparación durante el encuentro; no regresar al combate luego de este tiempo será considerado como abandono y terminará en la descalificación del participante. </li>
+                        <li class="dark:text-gray-400 py-1.5"> <strong class="text-base/[18px] dark:text-white">Reparación posterior a un encuentro:</strong> Cada competidor, posterior a un encuentro, tendrá asegurado un tiempo mínimo de reparación de 15 minutos. Este tiempo podría extenderse de forma variable en función de otros encuentros o factores determinados por el STAFF de LBR. 
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-medium  px-2  rounded dark:bg-gray-700 dark:text-yellow-400 border border-yellow-400">No Presentarse</span>
+                            a la convocatoria por parte del competidor luego de finalizado el tiempo establecido podría ser considerado abandono y terminar en la descalificación del participante.
                         </li>
                     </ul>
                 </div>
 
                 <!-- Baterias y energia -->
                 <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="battery-tab" role="tabpanel" aria-labelledby="battery-tab">
-                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Baterias y Energia</h3>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Baterías y Energía</h3>
                     <ul class="list-disc md:px-6 pl-6 pt-1 pb-3 ">
-                        <li class="dark:text-gray-400 py-1.5"><strong class="text-base/[18px] dark:text-white">Corte de energia: </strong> Los robots deben tener un corte de energía maestro, el cual les permita cortar la energia de forma rapida y segura, este interruptor o dispositivo debe poder accionarse sin desmontar el robot de ninguna forma y debe poder realizarse en no más de 15 segundos   </li>
-                        <li class="dark:text-gray-400 py-1.5"><strong class="text-base/[18px] dark:text-white">Carga de Baterias: </strong> La carga de baterias debe realizarse de forma segura, esta puede cargarse dentro o fuera del robot y en todo momento debe ser supervisada por el constructor o un miembro de su staff. <br> 
-                            Es responsabilidad del constructor y su equipo sersiorarse del buen estado de sus baterias, ya que estas representan un riesgo activo de exposiones fuera del ring  <br>
-                            <span class="bg-red-100 text-red-800 text-xs font-medium  px-2.5  rounded dark:bg-gray-700 dark:text-red-400 border border-red-400 mr-1">Si una bateria se incdencia  </span> o presenta un peligro para la seguridad, haga que la situación sea lo más segura posible y alerte al staff de LBR de inmediato.
+                        <li class="dark:text-gray-400 py-1.5"><strong class="text-base/[18px] dark:text-white">Corte de energía: </strong> Los robots deben tener un corte de energía maestro, el cual les permita cortar la energía de forma rápida y segura. Este interruptor o dispositivo debe poder accionarse sin desmontar el robot de ninguna forma y debe poder accionarse en no más de 15 segundos. </li>
+                        <li class="dark:text-gray-400 py-1.5">
+                            <strong class="text-base/[18px] dark:text-white">Carga de Baterías: </strong> 
+                            La carga de baterías debe realizarse de forma segura, pudiendo efectuarse dentro o fuera del robot y en todo momento debe ser supervisada por el constructor o un miembro de su equipo. <br> 
+                            Es responsabilidad del constructor y su equipo asegurarse del buen estado de sus baterías, ya que estas representan un riesgo activo de explosiones fuera del ring. <br>
+                            <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 rounded dark:bg-gray-700 dark:text-red-400 border border-red-400 mr-1">Si una batería se incendia </span> o presenta un peligro para la seguridad, es necesario hacer que la situación sea lo más segura posible y alertar al STAFF de LBR de inmediato.
                         </li>
                     </ul>
                 </div>
@@ -96,24 +98,26 @@ import Layout from "../layouts/Layout.astro"
                         <li class="dark:text-gray-400 py-1.5">
                             <strong class="text-base/[18px] dark:text-white">Arma activa:</strong> Todos los participantes deben contar con al menos un arma activa, la cual se define como un mecanismo independiente al tren motriz o medio de locomoción del robot. <br>
                             Para el caso de los participantes con 
-                            <span class="bg-blue-100 text-blue-800 text-xs font-medium  px-2  rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400 mr-1">MultiBot</span> 
-                            Solo se requiere que el robot principal tenga un arma activa 
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400 mr-1">MultiBot</span>, 
+                            solo se requiere que el robot principal tenga un arma activa.
                         </li>
                         <li class="dark:text-gray-400 py-1.5"> 
                             <strong class="text-base/[18px] dark:text-white">Armas basadas en fuego:</strong> Se permite el uso de armas basadas en fuego, llamas o calor. <br> 
                             <ul class="list-disc pl-6">
-                                <li>Los robots con armas basadas en fuego  deben poder  auto encenderse y auto extingirse</li>
-                                <li>En caso de perdida de señal o comunicacion con el receptor, las armas basadas en fuego deben auto extingirse en no más de 30 segundos</li>
-                                <li>Los robots con armas basadas en fuego no pueden tener mas de 250 gramos de combustible</li>
-                                <li>El encuentro puede deternerse y dar el robot como descalificado si el equipo del ring, las camaras, o el equipo de seguridad estan siendo dañados por el fuego</li>
+                                <li>Los robots con armas basadas en fuego deben poder autoencenderse y autoextinguirse.</li>
+                                <li>En caso de pérdida de señal o comunicación con el receptor, las armas basadas en fuego deben autoextinguirse en no más de 30 segundos.</li>
+                                <li>Los robots con armas basadas en fuego no pueden tener más de 250 gramos de combustible.</li>
+                                <li>El encuentro puede detenerse y dar al robot como descalificado si el equipo del ring, las cámaras o el equipo de seguridad están siendo dañados por el fuego.</li>
                             </ul>
                         </li>
                         <li class="dark:text-gray-400 py-1.5"> 
-                            <strong class="text-base/[18px] dark:text-white">Candados de seguridad:</strong> Todos los sistemas de arma deben tener un bloqueo que detenga su activación, ectensión, expanción, rotación, etc. <br>
+                            <strong class="text-base/[18px] dark:text-white">Candados de seguridad:</strong> Todos los sistemas de arma deben tener un bloqueo que detenga su activación, extensión, expansión, rotación, etc. <br>
                             Las armas que se mueven o giran deben tener su movimiento restringido en todas las direcciones. <br>
-                            Las armas quer disparan gas deben tener medios fisicos para evitar su disparo. Además todos los medios de almacenamiento de combustible deben diseñarse de forma predeterminada en la posicioón cerrada.
+                            Las armas que disparan gas deben tener medios físicos para evitar su disparo. Además, todos los medios de almacenamiento de combustible deben diseñarse de forma predeterminada en la posición cerrada.
                         </li>
-                        <li class="dark:text-gray-400 py-1.5"> <strong class="text-base/[18px] dark:text-white">Uso fuera de la arena:</strong> Queda terminantemente prohibido activar o testear las armas fuera de la arena de combate, ya que esto representa un peligo para los constructores y publico asistente. Todas las pruebas deben realizarse dentro de la arena de combate manteniendo las puertas cerradas </li>
+                        <li class="dark:text-gray-400 py-1.5"> 
+                            <strong class="text-base/[18px] dark:text-white">Uso fuera de la arena:</strong> Queda terminantemente prohibido activar o testear las armas fuera de la arena de combate, ya que esto representa un peligro para los constructores y público asistente. Todas las pruebas deben realizarse dentro de la arena de combate manteniendo las puertas cerradas. 
+                        </li>
                     </ul>
                 </div>
                 <!-- Restricciones de diseño -->
@@ -121,19 +125,16 @@ import Layout from "../layouts/Layout.astro"
                     <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Restricciones de diseño</h3>
                     <ul class="list-disc md:px-6 pl-6 pt-1 pb-3 ">
                         <li class="dark:text-gray-400 py-1.5">
-                            <strong class="text-base/[18px] dark:text-white">Peso: </strong> El robot en su totalidad y con todos sus componentes dentro no puede pesar mas de 3 libras o 1361 gramos, para el caso de 
-                            <span class="bg-blue-100 text-blue-800 text-xs font-medium  px-2  rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400 mr-1">MultiBot</span> 
-                            todos los robots en su conjunto no pueden superar este limite de peso
-                         </li>
-                        <li class="dark:text-gray-400 py-1.5"><strong class="text-base/[18px] dark:text-white">Armaduras blandas: </strong> Se permite el uso de tela, espuma y otros tipos de armaduras blandas, sin embargo, la armadura blanda no debe diseñarse de tal manera que represente riesgo problable de enrredo, la desición de cúal es un riesgo probable de enrredo queda a discreción de la organización</li>
-                        <li class="dark:text-gray-400 py-1.5"><strong class="text-base/[18px] dark:text-white">Dispositivos de enrredo: </strong> No se permite el uso de dispositivos de enrredo. Un dispositivo de enrredo se define como un compenente, subsustema o configuración de armadura que este diseñado para enrredarse en el arma o partes giratorias de un oponente. </li>
-                        <li class="dark:text-gray-400 py-1.5"><strong class="text-base/[18px] dark:text-white">Uso de líquidos: </strong> No se permite el uso de líquidos expulsados de un robot tales como agua, aceite, combustibles u otros que busquen dañar los componentes electronicos del oponente </li>
-                        <li class="dark:text-gray-400 py-1.5"><strong class="text-base/[18px] dark:text-white">Armas eléctricas : </strong> No se permite el uso de armas eléctricas o electromagneticas, tales como taser, pems, picanas de ganafo entre otras.  </li>
-                        <li class="dark:text-gray-400 py-1.5"><strong class="text-base/[18px] dark:text-white">bloqueo de visibilidad: </strong> No se permite el uso de armas o elementos que bloqueen la visibilidad en el ring tales como pintura, humo u otras  </li>
-                        <li class="dark:text-gray-400 py-1.5"><strong class="text-base/[18px] dark:text-white">Daños fuera del ring: </strong> No se permite el uso de armas o elementos que puedan causar daños o malestar fuera del ring, esto incluye, entre otros. láseres, luces estroboscópicas o de alta luminosidad ni ruidos exesivamente fuertes  </li>
-                        
-
-
+                            <strong class="text-base/[18px] dark:text-white">Peso: </strong> El robot en su totalidad y con todos sus componentes incluidos no puede pesar más de 3 libras o 1361 gramos. En el caso de 
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400 mr-1">MultiBot</span>, 
+                            todos los robots en su conjunto no pueden superar este límite de peso.
+                        </li>
+                        <li class="dark:text-gray-400 py-1.5"><strong class="text-base/[18px] dark:text-white">Armaduras blandas: </strong> Se permite el uso de tela, espuma y otros tipos de armaduras blandas; sin embargo, la armadura blanda no debe diseñarse de tal manera que represente un riesgo probable de enredo. La decisión de qué constituye un riesgo probable de enredo queda a discreción de la organización.</li>
+                        <li class="dark:text-gray-400 py-1.5"><strong class="text-base/[18px] dark:text-white">Dispositivos de enredo: </strong> No se permite el uso de dispositivos de enredo. Un dispositivo de enredo se define como un componente, subsistema o configuración de armadura diseñada específicamente para enredarse en el arma o partes giratorias de un oponente.</li>
+                        <li class="dark:text-gray-400 py-1.5"><strong class="text-base/[18px] dark:text-white">Uso de líquidos: </strong> No se permite el uso de líquidos expulsados por un robot, tales como agua, aceite, combustibles u otros que busquen dañar los componentes electrónicos del oponente.</li>
+                        <li class="dark:text-gray-400 py-1.5"><strong class="text-base/[18px] dark:text-white">Armas eléctricas: </strong> No se permite el uso de armas eléctricas o electromagnéticas, tales como tasers, PEMs, picanas de ganado, entre otras.</li>
+                        <li class="dark:text-gray-400 py-1.5"><strong class="text-base/[18px] dark:text-white">Bloqueo de visibilidad: </strong> No se permite el uso de armas o elementos que bloqueen la visibilidad en el ring, tales como pintura, humo u otros.</li>
+                        <li class="dark:text-gray-400 py-1.5"><strong class="text-base/[18px] dark:text-white">Daños fuera del ring: </strong> No se permite el uso de armas o elementos que puedan causar daños o malestar fuera del ring. Esto incluye, entre otros, láseres, luces estroboscópicas o de alta luminosidad, ni ruidos excesivamente fuertes.</li>
                     </ul>    
                 </div>
                 
