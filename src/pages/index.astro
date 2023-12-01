@@ -3,11 +3,12 @@ import Layout from "../layouts/Layout.astro"
 import Countdown from "../components/Countdown.astro"
 import Logo from "../components/Logo.astro";
 import NextEventButton from "../components/NextEventButton.astro";
+import Podio from '../components/Podio.astro';
 
 ---
 
 <Layout title="Proxima Fecha" id="inicio">
-    <section class="relative flex justify-center items-center flex-col md:h-[65vh] h-[32vh]  ">
+    <section class="relative flex justify-center items-center flex-col md:h-[70vh] h-[32vh]  ">
 
         <div class="absolute flex justify-center text-gray-800 stroke-slate-100 stroke-[4px] w-1/2 ccl">
             <Logo />
@@ -18,11 +19,14 @@ import NextEventButton from "../components/NextEventButton.astro";
         <div class="triangle absolute border-current "></div>
     </section>
 
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4  ">
+    <div class="max-w-screen-lg flex flex-wrap items-center justify-between mx-auto px-4 md:mt-8 mt-10">
 
-       <Countdown />
-        <h3 class="text-gray-800 dark:text-white text-9lg p-3">
-         proxima Fecha
+        <div class="w-full">
+            <Podio />
+        </div>
+
+        <h3 class="text-gray-800 dark:text-white p-3 md:text-3xl text-2xl mt-12">
+            Próxima Fecha <strong>Temporada 2024</strong>
         </h3>
         <p class="text-gray-800 dark:text-white p-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt cumque unde in odio nisi ipsum dolores molestias quos officiis consequatur, corporis natus consectetur? Corporis voluptatem ratione aperiam adipisci ad commodi.</p>
         <p class="text-gray-800 dark:text-white p-3">Recusandae unde error aliquam? Possimus esse maiores quo obcaecati recusandae, ipsam consequatur, officiis asperiores quia sunt quas, deserunt aut veniam quis quisquam explicabo praesentium est eaque omnis! Quaerat, odit? Natus?</p>
@@ -31,21 +35,8 @@ import NextEventButton from "../components/NextEventButton.astro";
         <p class="text-gray-800 dark:text-white p-3">Ipsam aliquam animi, culpa labore quibusdam ullam quae veniam consequatur sunt consectetur voluptate quaerat pariatur debitis unde, dignissimos nulla reprehenderit tempora. Quibusdam labore, sapiente facere nam soluta ut possimus culpa!</p>
         <p class="text-gray-800 dark:text-white p-3">Voluptatibus, dolor at, recusandae illo architecto ut eligendi, molestiae voluptas consequatur officia alias qui neque magnam tempora magni velit itaque adipisci illum soluta. Alias maxime facere distinctio quis eligendi quae!</p>
         <p class="text-gray-800 dark:text-white p-3">Excepturi dolorem harum, soluta nam aut fugiat praesentium atque. Natus voluptatibus magnam iste dolor beatae tempore in vel impedit voluptate aut! Dolorum praesentium tempore facere inventore velit aliquid laborum voluptatum.</p>
-        <p class="text-gray-800 dark:text-white p-3">Doloribus sint quis quas veritatis ipsa incidunt sit, repellat reprehenderit saepe nihil at voluptas, ratione vero commodi, ex velit. Nisi neque ea non aspernatur sed cumque sapiente, corrupti et alias.</p>
-        <p class="text-gray-800 dark:text-white p-3">Architecto voluptas molestias, iste quo neque alias cupiditate incidunt. Laudantium velit voluptatibus quia magnam tempora inventore saepe sint. Nisi blanditiis facilis possimus rem veritatis. Similique eius aut consectetur obcaecati neque.</p>
-        <p class="text-gray-800 dark:text-white p-3">Repellat velit accusamus sed dolorum ratione perferendis magni aliquam, ea vitae nam facilis corrupti maiores sequi deleniti tempora fugit! Expedita repudiandae fugit enim recusandae, doloribus eveniet debitis sunt dolorem quam?</p>
-        <p class="text-gray-800 dark:text-white p-3">Accusantium delectus eveniet laborum quod, natus totam veniam, aliquam doloremque, facilis excepturi cum iure? Eum quo quisquam, dolorum voluptates adipisci eos quae cum natus, error, perspiciatis reiciendis harum doloremque sapiente!</p>
-        <p class="text-gray-800 dark:text-white p-3">Quia nisi cumque ut quidem repellendus praesentium beatae, distinctio ipsum at, unde provident eaque magni accusantium sed aspernatur libero explicabo esse asperiores quam non sit iusto ratione minima nam. Rerum.</p>
-        <p class="text-gray-800 dark:text-white p-3">Accusantium, laboriosam asperiores et obcaecati perferendis voluptas porro sapiente dolorum vero consectetur cupiditate velit inventore distinctio amet! Nihil sapiente, optio pariatur perspiciatis consectetur voluptatibus. Aliquid veniam natus ad quas qui?</p>
-        <p class="text-gray-800 dark:text-white p-3">Atque vitae, molestiae doloremque, mollitia commodi repellendus officiis fugit necessitatibus, deleniti nobis repudiandae! Corrupti, libero soluta omnis ipsam eius quis necessitatibus architecto accusamus ab, facilis molestias ea esse! Eaque, iste?</p>
-        <p class="text-gray-800 dark:text-white p-3">Repellendus rem aspernatur culpa repellat maxime doloremque esse, labore rerum reprehenderit accusantium consequuntur reiciendis sequi magnam nihil voluptate ipsa vel placeat amet perferendis corporis excepturi incidunt? Voluptate odit optio quas?</p>
-        <p class="text-gray-800 dark:text-white p-3">Aspernatur natus ex placeat eum fugit maxime est tenetur accusantium sint, numquam, temporibus non voluptate aliquam quibusdam odio? Tempora, rem? Quis iure enim eveniet sed asperiores non ducimus quasi mollitia?</p>
-        <p class="text-gray-800 dark:text-white p-3">Autem nostrum impedit fugiat voluptates possimus. Quisquam dolorum, fugit enim porro explicabo consequuntur error soluta temporibus cum id eaque accusantium, harum unde possimus. Cum veritatis vero minus neque commodi eligendi.</p>
-        <p class="text-gray-800 dark:text-white p-3">Odio repudiandae illo aliquam sint quae, saepe totam voluptatibus aperiam molestiae! Reiciendis ea fugiat sunt sapiente placeat temporibus officia, quia perferendis repellat at expedita quibusdam, porro iusto possimus quae asperiores.</p>
-        <p class="text-gray-800 dark:text-white p-3">Amet, deserunt quidem tempore explicabo saepe veniam officia cum suscipit eos laboriosam recusandae! Sapiente, aut voluptates ipsa placeat pariatur rem similique ab repellendus, velit ad dolores accusantium amet alias natus!</p>
-        <p class="text-gray-800 dark:text-white p-3">Magni eum officiis, nisi quas iure incidunt, asperiores doloribus assumenda esse similique consequuntur aspernatur rem dolore, repudiandae error id necessitatibus vitae dolorum. Beatae eveniet earum laudantium minima, est magni itaque!</p>   
     </div>
-   
+
 </Layout>
 
 
