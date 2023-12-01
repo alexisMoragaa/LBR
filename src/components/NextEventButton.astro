@@ -1,0 +1,35 @@
+---
+
+---
+<span class="border-next-date absolute md:bottom-6 -bottom-1 md:text-lg text-xs">
+    <button class="text-white next-date">
+        Próximo evento temporada 2024
+    </button>
+</span>
+
+
+<style>
+    .next-date {
+        background: #1f2937;
+        padding: 10px 30px;
+        transition: all  ease-in-out 0.1s ; 
+        border: 1px solid white;
+    }
+    .border-next-date {
+        transition: all ease-in-out .2s;
+        border: 1px solid transparent;
+        margin: 10px; /* Ajusta el margen inicial para compensar el aumento de padding */
+    }
+
+    .border-next-date:hover {
+        padding: 10px;
+        margin: 0; 
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 5px;
+        /* transform: scale(1.1); */
+        filter: blur(1.5);
+    }
+    .border-next-date:hover  .next-date {
+        border: none;
+    }
+</style>

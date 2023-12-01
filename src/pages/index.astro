@@ -2,6 +2,8 @@
 import Layout from "../layouts/Layout.astro"
 import Countdown from "../components/Countdown.astro"
 import Logo from "../components/Logo.astro";
+import NextEventButton from "../components/NextEventButton.astro";
+
 ---
 
 <Layout title="Proxima Fecha" id="inicio">
@@ -12,13 +14,13 @@ import Logo from "../components/Logo.astro";
         </div>
 
         <video class="w-full object-cover object-center h-full" loop muted autoplay src="https://nhrl.cdn.prismic.io/nhrl/2236371d-b74a-4ce2-afba-13cae109c73d_COMPRESSED-NHRL_LOOPING+VIDEO_15_2+SEC.mp4"></video>
+        <NextEventButton />
         <div class="triangle absolute border-current "></div>
     </section>
 
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4  ">
 
        <Countdown />
-
         <h3 class="text-gray-800 dark:text-white text-9lg p-3">
          proxima Fecha
         </h3>
