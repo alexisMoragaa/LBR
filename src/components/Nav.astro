@@ -1,8 +1,8 @@
-<nav class="bg-transparent border-gray-20 start-0 top-0 fixed w-full z-20 backdrop-blur-sm">
+<nav class="bg-transparent border-gray-20 start-0 top-0 fixed w-full z-20 " id="navbar">
 
     <div class="max-w-screen-lg flex flex-wrap items-center justify-between mx-auto p-3">
         <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="./../../public//logo2.PNG" class="h-12 rounded-full" alt="LBR Logo" />
+            <img src="/logo2.png" class="h-12 rounded-full" alt="LBR Logo" />
             <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">LBR</span> -->
         </a>
         <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
@@ -46,9 +46,20 @@
     </div>
 </nav>
 
-
 <!--  md:text-blue-700  md:dark:text-blue-500 -->
 <script>
+    window.addEventListener('scroll', () => {
+        const navbar = document.getElementById('navbar');
+        const triggerHeight = window.innerHeight * 0.1; // 10% de la altura de la ventana, ajusta según necesites
+
+        if (window.scrollY > triggerHeight) {
+            navbar.classList.add('backdrop-blur-sm');
+        } else {
+            navbar.classList.remove('backdrop-blur-sm');
+        }
+    });
+
+
     //Se actualiza el componente nav segun la pagina que se muestre en pantalla
     let nav = document.getElementById("main-layout");
     document.getElementById(nav.dataset.id).classList.add('md:text-blue-700' , 'md:dark:text-blue-500')
