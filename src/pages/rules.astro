@@ -4,14 +4,17 @@ import Layout from "../layouts/Layout.astro"
 ---
 
 <Layout title="reglas" id="rules">
-    <section class="max-w-screen-lg flex flex-wrap items-center justify-between mx-auto px-6 mt-12 mb-12">
+    <section class="max-w-screen-lg flex flex-wrap items-center justify-between mx-auto px-6 md:mt-20 mt-12 mb-12">
 
         
         
         <div class="header md:mt-12 mt-10">
             <div class="flex items-end">
-                <h1 class="dark:text-white md:text-5xl text-4xl pr-4 relative" >Reglas y regulaciones  <span class=" md:w-32 w-20 pl-1 inline-block absolute bottom-0  dark:text-gray-800 text-gray-300 dark:stroke-slate-50 stroke-gray-800 stroke-[4px]"><Logo /> </span> </h1>
-              
+                <h1 class="dark:text-white md:text-5xl text-4xl pr-4 relative" >Reglas y <span class="pr-2">regulaciones</span>  
+                    <span class=" md:w-22 w-20  inline-block  bottom-0  dark:text-gray-800 text-gray-300 dark:stroke-slate-50 stroke-gray-800 stroke-[2px]">
+                        <Logo /> 
+                    </span> 
+                </h1>
             </div>
             <p class="dark:text-white mt-6">
                 El conjunto de reglas de la LBR busca fomentar la participacion de  diseños creativos; peleas divertidas; e igualdad de condiciones para todos los competidores.
@@ -29,32 +32,32 @@ import Layout from "../layouts/Layout.astro"
             
             <ul class="flex-column space-y space-y-4 text-sm font-medium text-gray-500 dark:text-gray-400 md:me-4 mb-4 md:mb-0" id="reule-tab" data-tabs-toggle="#rules-tab-content" role="tablist">
                 <li role="presentation"> 
-                    <button class="inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white"  data-tabs-target="#fight-tab" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                    <button class="inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-[aqua] transition-all duration-300"  data-tabs-target="#fight-tab" type="button" role="tab" aria-controls="profile" aria-selected="false">
                         <i class="fa-sharp fa-solid fa-face-hand-peeking mr-2"></i>
                         Enfrentamientos 
                     </button>
                 </li>
 
                 <li role="presentation"> 
-                    <button class="inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white"  data-tabs-target="#battery-tab" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                    <button class="inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-[aqua] transition-all duration-300"  data-tabs-target="#battery-tab" type="button" role="tab" aria-controls="profile" aria-selected="false">
                         <i class="fa-solid fa-battery-bolt mr-2"></i>
                         Energía 
                     </button>
                 </li>
                 <li role="presentation"> 
-                    <button class="inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white"  data-tabs-target="#weapon-tab" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                    <button class="inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-[aqua] transition-all duration-300"  data-tabs-target="#weapon-tab" type="button" role="tab" aria-controls="profile" aria-selected="false">
                         <i class="fa-solid fa-swords mr-2"></i>
                         Armas
                     </button>
                 </li>
                 
                 <li role="presentation">
-                    <button class="inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white"  data-tabs-target="#restrictions-tab" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                    <button class="inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-[aqua] transition-all duration-300"  data-tabs-target="#restrictions-tab" type="button" role="tab" aria-controls="profile" aria-selected="false">
                         <i class="fa-solid fa-skull-crossbones mr-2"></i>
                         Restricciones
                     </button>
                 </li>
-              
+
             </ul>
 
             <div class="rules-tab-content ">
@@ -65,9 +68,9 @@ import Layout from "../layouts/Layout.astro"
                         <li class="dark:text-gray-400 py-1.5"> <strong class="text-base/[18px] dark:text-white">Inspección de seguridad:</strong> Al inicio de cada encuentro, el robot deberá pasar por una inspección de seguridad realizada por un miembro del STAFF LBR, durante la cual se validará que el robot cumpla con todas las medidas de seguridad y restricciones de diseño establecidas. <br> Los robots que no cumplan con la inspección no podrán participar de los encuentros. </li>                        
                         <li class="dark:text-gray-400 py-1.5 "><strong class="text-base/[18px] dark:text-white">Duración del encuentro:</strong> Cada encuentro tendrá una duración de 3 minutos, dentro de los cuales deberán lograr la destrucción o rendición de su oponente, de no ser así, el ganador será definido por los jueces. </li>
                         <li class="dark:text-gray-400 py-1.5"> <strong class="text-base/[18px] dark:text-white">Decisión de los jueces:</strong> Si el encuentro llega a los tres minutos, los jueces determinarán el ganador mediante un sistema de puntos basados en
-                            <span class="bg-blue-100 text-blue-800 text-xs font-medium me-1 px-2  rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400">Agresividad</span>, 
-                            <span class="bg-blue-100 text-blue-800 text-xs font-medium  me-1 px-2  rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400">Daño</span> y
-                            <span class="bg-blue-100 text-blue-800 text-xs font-medium me-1 px-2 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400">Maniobrabilidad</span>.
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium me-1 px-2  rounded dark:bg-gray-700 dark:text-[aqua] border border-[aqua]">Agresividad</span>, 
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium  me-1 px-2  rounded dark:bg-gray-700 dark:text-[aqua] border border-[aqua]">Daño</span> y
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium me-1 px-2 rounded dark:bg-gray-700 dark:text-[aqua] border border-[aqua]">Maniobrabilidad</span>.
                         </li>
                         <li class="dark:text-gray-400 py-1.5"> <strong class="text-base/[18px] dark:text-white">Reparación durante el encuentro:</strong> Cada competidor tiene destinado un minuto como tiempo de reparación durante el encuentro; no regresar al combate luego de este tiempo será considerado como abandono y terminará en la descalificación del participante. </li>
                         <li class="dark:text-gray-400 py-1.5"> <strong class="text-base/[18px] dark:text-white">Reparación posterior a un encuentro:</strong> Cada competidor, posterior a un encuentro, tendrá asegurado un tiempo mínimo de reparación de 15 minutos. Este tiempo podría extenderse de forma variable en función de otros encuentros o factores determinados por el STAFF de LBR. 
@@ -86,7 +89,7 @@ import Layout from "../layouts/Layout.astro"
                             <strong class="text-base/[18px] dark:text-white">Carga de Baterías: </strong> 
                             La carga de baterías debe realizarse de forma segura, pudiendo efectuarse dentro o fuera del robot y en todo momento debe ser supervisada por el constructor o un miembro de su equipo. <br> 
                             Es responsabilidad del constructor y su equipo asegurarse del buen estado de sus baterías, ya que estas representan un riesgo activo de explosiones fuera del ring. <br>
-                            <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 rounded dark:bg-gray-700 dark:text-red-400 border border-red-400 mr-1">Si una batería se incendia </span> o presenta un peligro para la seguridad, es necesario hacer que la situación sea lo más segura posible y alertar al STAFF de LBR de inmediato.
+                            <span class="bg-red-50 text-[deeppink] text-xs font-medium px-2.5 rounded dark:bg-gray-700 dark:text-[deeppink] border border-[deeppink] mr-1">Si una batería se incendia </span> o presenta un peligro para la seguridad, es necesario hacer que la situación sea lo más segura posible y alertar al STAFF de LBR de inmediato.
                         </li>
                     </ul>
                 </div>
@@ -98,7 +101,7 @@ import Layout from "../layouts/Layout.astro"
                         <li class="dark:text-gray-400 py-1.5">
                             <strong class="text-base/[18px] dark:text-white">Arma activa:</strong> Todos los participantes deben contar con al menos un arma activa, la cual se define como un mecanismo independiente al tren motriz o medio de locomoción del robot. <br>
                             Para el caso de los participantes con 
-                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400 mr-1">MultiBot</span>, 
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2 rounded dark:bg-gray-700 dark:text-[aqua] border border-[aqua] mr-1">MultiBot</span>, 
                             solo se requiere que el robot principal tenga un arma activa.
                         </li>
                         <li class="dark:text-gray-400 py-1.5"> 
@@ -126,7 +129,7 @@ import Layout from "../layouts/Layout.astro"
                     <ul class="list-disc md:px-6 pl-6 pt-1 pb-3 ">
                         <li class="dark:text-gray-400 py-1.5">
                             <strong class="text-base/[18px] dark:text-white">Peso: </strong> El robot en su totalidad y con todos sus componentes incluidos no puede pesar más de 3 libras o 1361 gramos. En el caso de 
-                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400 mr-1">MultiBot</span>, 
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2 rounded dark:bg-gray-700 dark:text-[aqua] border border-[aqua] mr-1">MultiBot</span>, 
                             todos los robots en su conjunto no pueden superar este límite de peso.
                         </li>
                         <li class="dark:text-gray-400 py-1.5"><strong class="text-base/[18px] dark:text-white">Armaduras blandas: </strong> Se permite el uso de tela, espuma y otros tipos de armaduras blandas; sin embargo, la armadura blanda no debe diseñarse de tal manera que represente un riesgo probable de enredo. La decisión de qué constituye un riesgo probable de enredo queda a discreción de la organización.</li>
@@ -144,4 +147,10 @@ import Layout from "../layouts/Layout.astro"
         
 
     </section>
+
+    <style>
+        [aria-selected="true"] {
+        color: deeppink; /* Reemplaza con tu color */
+        }
+    </style>
 </Layout>
