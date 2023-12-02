@@ -8,18 +8,19 @@ import Podio from '../components/Podio.astro';
 ---
 
 <Layout title="Proxima Fecha" id="inicio">
-    <section class="relative flex justify-center items-center flex-col md:h-[70vh] h-[32vh]  ">
+    <section class="relative flex justify-center items-center flex-col md:h-[75vh] h-[35vh]  ">
 
-        <div class="absolute flex justify-center text-gray-800 stroke-slate-100 stroke-[4px] w-1/2 ccl">
+        <div class="absolute flex justify-center text-gray-800 stroke-slate-100 stroke-[4px] md:w-[35%] w-[35%] ccl mt-6">
             <Logo />
         </div>
 
-        <video class="w-full object-cover object-center h-full" loop muted autoplay src="https://nhrl.cdn.prismic.io/nhrl/2236371d-b74a-4ce2-afba-13cae109c73d_COMPRESSED-NHRL_LOOPING+VIDEO_15_2+SEC.mp4"></video>
+        <!-- <video class="w-full object-cover object-center h-full" loop muted autoplay src="https://nhrl.cdn.prismic.io/nhrl/2236371d-b74a-4ce2-afba-13cae109c73d_COMPRESSED-NHRL_LOOPING+VIDEO_15_2+SEC.mp4"></video> -->
+        <img src="/img/banner2.jpg" alt=""  class="w-full object-cover object-top h-full">
         <NextEventButton />
         <div class="triangle absolute border-current "></div>
     </section>
 
-    <div class="max-w-screen-lg flex flex-wrap items-center justify-between mx-auto px-4 md:mt-8 mt-10">
+    <div class="max-w-screen-lg flex flex-wrap items-center justify-between mx-auto px-4 md:mt-8 mt-7">
 
         <div class="w-full">
             <Podio />
