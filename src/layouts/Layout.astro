@@ -10,15 +10,19 @@ interface Props {
 
 const { title, id } = Astro.props;
 
+const  d = new  Date();
+const  year = d.getFullYear();
 ---
 
 <!doctype html>
-<html lang="en" class="">
+<html lang="es" class="">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Liga Battalas de Robot" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/faviconLBR.svg" sizes="16x16">
+		<link rel="icon" type="image/svg+xml" href="/faviconLBR.svg" sizes="32x32">
+		<link rel="icon" type="image/svg+xml" href="/faviconLBR.svg" sizes="48x48">
 		<meta name="generator" content="Liga batallas de robot" />
 		<title>{title}</title>
 	</head>
@@ -28,10 +32,21 @@ const { title, id } = Astro.props;
 		<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto&family=Roboto+Condensed:ital,wght@0,500;0,700;1,300&display=swap" rel="stylesheet"> -->
-		<main class="pb-12"  id="main-layout" data-id=`${id}`>
+		<main class=""  id="main-layout" data-id=`${id}`>
 			<Nav/>
 			<slot />
-			<script is:inline src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
+				
+
+			<footer class="bg-white rounded-lg shadow m-4 mt-20 dark:bg-gray-800 ">
+				<div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+					<span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+						© {year} <a href="https://www.instagram.com/distrito_robot/" class="hover:underline text-[deeppink]" title="Instagram Distrito Robot">Distrito Robot</a>. Todos los derechos reservados.
+					</span>
+					<span class="dark:text-white text-sm">Made by <a class="text-[aqua] hover:underline" href="https://www.instagram.com/amg.css/" title="Instagram AMG"><strong>AMG</strong></a></span>
+				</div>
+			</footer>
+
+			<script is:inline src="../../node_modules/flowbite/dist/flowbite.js"></script>
 		</main>
 		
 	</body>

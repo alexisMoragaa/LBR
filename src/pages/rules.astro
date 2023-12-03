@@ -4,10 +4,9 @@ import Layout from "../layouts/Layout.astro"
 ---
 
 <Layout title="reglas" id="rules">
+    
     <section class="max-w-screen-lg flex flex-wrap items-center justify-between mx-auto px-6 md:mt-20 mt-12 mb-12">
 
-        
-        
         <div class="header md:mt-12 mt-10">
             <div class="flex items-end">
                 <h1 class="dark:text-white md:text-5xl text-4xl pr-4 relative" >Reglas y <span class="pr-2">regulaciones</span>  
@@ -32,27 +31,27 @@ import Layout from "../layouts/Layout.astro"
             
             <ul class="flex-column space-y space-y-4 text-sm font-medium text-gray-500 dark:text-gray-400 md:me-4 mb-4 md:mb-0" id="reule-tab" data-tabs-toggle="#rules-tab-content" role="tablist">
                 <li role="presentation"> 
-                    <button class="inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-[aqua] transition-all duration-300"  data-tabs-target="#fight-tab" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                    <button class="rules inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-[aqua] transition-all duration-300"  data-tabs-target="#fight-tab" type="button" role="tab" aria-controls="profile" aria-selected="false">
                         <i class="fa-sharp fa-solid fa-face-hand-peeking mr-2"></i>
                         Enfrentamientos 
                     </button>
                 </li>
 
                 <li role="presentation"> 
-                    <button class="inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-[aqua] transition-all duration-300"  data-tabs-target="#battery-tab" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                    <button class="rules inline-flex items-center px-4 py-3 rounded-lg  bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-[aqua] transition-all duration-300"  data-tabs-target="#battery-tab" type="button" role="tab" aria-controls="profile" aria-selected="false">
                         <i class="fa-solid fa-battery-bolt mr-2"></i>
                         Energía 
                     </button>
                 </li>
                 <li role="presentation"> 
-                    <button class="inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-[aqua] transition-all duration-300"  data-tabs-target="#weapon-tab" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                    <button class="rules inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-[aqua] transition-all duration-300"  data-tabs-target="#weapon-tab" type="button" role="tab" aria-controls="profile" aria-selected="false">
                         <i class="fa-solid fa-swords mr-2"></i>
                         Armas
                     </button>
                 </li>
                 
                 <li role="presentation">
-                    <button class="inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-[aqua] transition-all duration-300"  data-tabs-target="#restrictions-tab" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                    <button class="rules inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-[aqua] transition-all duration-300"  data-tabs-target="#restrictions-tab" type="button" role="tab" aria-controls="profile" aria-selected="false">
                         <i class="fa-solid fa-skull-crossbones mr-2"></i>
                         Restricciones
                     </button>
@@ -150,7 +149,10 @@ import Layout from "../layouts/Layout.astro"
 
     <style>
         [aria-selected="true"] {
-        color: deeppink; /* Reemplaza con tu color */
+            color: deeppink!important; /* Reemplaza con tu color */
+        }
+        .rules:hover{
+            color:aqua!important;
         }
     </style>
 </Layout>
